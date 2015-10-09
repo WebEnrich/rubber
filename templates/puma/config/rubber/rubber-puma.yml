@@ -1,0 +1,8 @@
+puma_num_workers: 5
+puma_pid_file: /var/run/puma.pid
+
+role_dependencies:
+  unicorn: [nginx]
+roles:
+  puma:
+    gems: [puma]
